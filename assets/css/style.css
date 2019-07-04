@@ -1,0 +1,100 @@
+
+*{
+  box-sizing: border-box;
+}
+
+html.body { 
+  width: 100%;
+  background-image: url(../images/Backgroundcolor.png)
+}
+
+h1{ 
+    background-color: chocolate;
+    color: white;
+    width: 25%;
+    margin-bottom: 10px;
+    padding: 25px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.instructions {
+    background-color: bisque;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+
+}
+
+.instructions p {
+    color: green;
+    font-size: 18px;
+    padding: 3px;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+#game-box {
+  display: flex;
+  margin-bottom: 5%;
+  width: 30%;
+}
+
+#win-lose{
+width: 30%; 
+background-color: aqua;
+color: purple;
+display: flex;
+flex-direction: column;
+}
+
+#random-number {
+  width: 70%;
+  background-color:green; 
+  color: purple;
+  margin-right: 15px;
+
+}
+
+#random-number p {
+  font-size: 58px;
+  padding: 40px;
+}
+
+#score h2 {
+  background-color: teal;
+  color: white;
+}
+
+#score {
+  width: 25%;
+  
+}
+
+#score-box {
+  background-color: teal; 
+  color: white;
+  margin-top: 10px;
+}
+
+#score-box p {
+  text-align: center;
+  font-size: 58px;
+  padding: 60px;
+}
+
+#crystals {
+  width: 50%;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#gem1, #gem2, #gem3 {
+  margin-right: 10%;
+
+}
+
+
+
