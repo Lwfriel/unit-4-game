@@ -33,46 +33,74 @@ $(document).ready(function () {
     gem3 = getRandomInteger(1, 12);
     gem4 = getRandomInteger(1, 12);
     totalscore = 0;
-    $ ("#random-number").html("<p>"+randomNumber+"</p>");
-    $ ("#score-box").html("<p>"+totalscore+"</p>")
+    $("#random-number").html("<p>" + randomNumber + "</p>");
+    $("#score-box").html("<p>" + totalscore + "</p>")
 
   }
+
+  function winlose() {
+    if (totalscore === randomNumber) {
+      wins++ 
+      $("#winlosemessage").text("You WIN!") 
+      $("#wins").text(wins) 
+
+    }
+    else {
+      lose++
+      $("#winlosemessage").text("You LOSE!") 
+      $("#lose").text(losses) 
+    }
+  }
+
   start();
-  console.log (randomNumber);
-  console.log (gem1);
-  console.log (gem2);
-  console.log (gem3);
-  console.log (gem4);
+  console.log(randomNumber);
+  console.log(gem1);
+  console.log(gem2);
+  console.log(gem3);
+  console.log(gem4);
 
- $("#gem1").click(function() { 
-  
-   if (totalscore < randomNumber) {
-    totalscore = totalscore+gem1
-    console.log (totalscore);
-    $ ("#score-box").html("<p>"+totalscore+"</p>")
-   }
- })
- $("#gem2").click(function() {
-  if (totalscore < randomNumber) { 
-  totalscore = totalscore+gem2
-  console.log (totalscore);
-  $ ("#score-box").html("<p>"+totalscore+"</p>")
-  }
-})
-$("#gem3").click(function() {
-  if (totalscore < randomNumber) {
-  totalscore = totalscore+gem3
-   console.log (totalscore);
-   $ ("#score-box").html("<p>"+totalscore+"</p>")
-  }
-})
-$("#gem4").click(function() {
-  if (totalscore < randomNumber) {
-  totalscore = totalscore+gem4
-   console.log (totalscore);
-   $ ("#score-box").html("<p>"+totalscore+"</p>")
-  }
-})
 
+
+  $("#gem1").click(function () {
+
+    if (totalscore < randomNumber) {
+      totalscore = totalscore + gem1
+      console.log(totalscore);
+      $("#score-box").html("<p>" + totalscore + "</p>")
+    }
+    else {
+      winlose();
+    }
+  })
+  $("#gem2").click(function () {
+    if (totalscore < randomNumber) {
+      totalscore = totalscore + gem2
+      console.log(totalscore);
+      $("#score-box").html("<p>" + totalscore + "</p>")
+    }
+    else {
+      winlose();
+    }
+  })
+  $("#gem3").click(function () {
+    if (totalscore < randomNumber) {
+      totalscore = totalscore + gem3
+      console.log(totalscore);
+      $("#score-box").html("<p>" + totalscore + "</p>")
+    }
+    else {
+      winlose();
+    }
+  })
+  $("#gem4").click(function () {
+    if (totalscore < randomNumber) {
+      totalscore = totalscore + gem4
+      console.log(totalscore);
+      $("#score-box").html("<p>" + totalscore + "</p>")
+    }
+    else {
+      winlose();
+    }
+  })
 
 })
