@@ -35,7 +35,7 @@ $(document).ready(function () {
     totalscore = 0;
     $ ("#random-number").html("<p>"+randomNumber+"</p>");
     $ ("#score-box").html("<p>"+totalscore+"</p>")
-    
+
   }
   start();
   console.log (randomNumber);
@@ -44,6 +44,22 @@ $(document).ready(function () {
   console.log (gem3);
   console.log (gem4);
 
+ $("#gem1").click(function() { 
+   totalscore = totalscore+gem1
+   console.log (totalscore);
+ })
+ $("#gem2").click(function() {
+  totalscore = totalscore+gem1
+  console.log (totalscore);
+})
+$("#gem3").click(function() {
+  totalscore = totalscore+gem1
+   console.log (totalscore);
+})
+$("#gem4").click(function() {
+  totalscore = totalscore+gem1
+   console.log (totalscore);
+})
 
 
 
