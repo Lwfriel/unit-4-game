@@ -45,27 +45,34 @@ $(document).ready(function () {
   console.log (gem4);
 
  $("#gem1").click(function() { 
-   totalscore = totalscore+gem1
-   console.log (totalscore);
-   $ ("#score-box").html("<p>"+totalscore+"</p>")
+  
+   if (totalscore < randomNumber) {
+    totalscore = totalscore+gem1
+    console.log (totalscore);
+    $ ("#score-box").html("<p>"+totalscore+"</p>")
+   }
  })
  $("#gem2").click(function() {
+  if (totalscore < randomNumber) { 
   totalscore = totalscore+gem2
   console.log (totalscore);
   $ ("#score-box").html("<p>"+totalscore+"</p>")
+  }
 })
 $("#gem3").click(function() {
+  if (totalscore < randomNumber) {
   totalscore = totalscore+gem3
    console.log (totalscore);
    $ ("#score-box").html("<p>"+totalscore+"</p>")
+  }
 })
 $("#gem4").click(function() {
+  if (totalscore < randomNumber) {
   totalscore = totalscore+gem4
    console.log (totalscore);
    $ ("#score-box").html("<p>"+totalscore+"</p>")
+  }
 })
-
-
 
 
 })
