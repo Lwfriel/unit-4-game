@@ -47,18 +47,22 @@ $(document).ready(function () {
  $("#gem1").click(function() { 
    totalscore = totalscore+gem1
    console.log (totalscore);
+   $ ("#score-box").html("<p>"+totalscore+"</p>")
  })
  $("#gem2").click(function() {
-  totalscore = totalscore+gem1
+  totalscore = totalscore+gem2
   console.log (totalscore);
+  $ ("#score-box").html("<p>"+totalscore+"</p>")
 })
 $("#gem3").click(function() {
-  totalscore = totalscore+gem1
+  totalscore = totalscore+gem3
    console.log (totalscore);
+   $ ("#score-box").html("<p>"+totalscore+"</p>")
 })
 $("#gem4").click(function() {
-  totalscore = totalscore+gem1
+  totalscore = totalscore+gem4
    console.log (totalscore);
+   $ ("#score-box").html("<p>"+totalscore+"</p>")
 })
 
 
