@@ -33,7 +33,8 @@ $(document).ready(function () {
     gem3 = getRandomInteger(1, 12);
     gem4 = getRandomInteger(1, 12);
     totalscore = 0;
-    $ ("#random-number").html("<p>"+randomNumber+"</p>")
+    $ ("#random-number").html("<p>"+randomNumber+"</p>");
+    $ ("#score-box").html("<p>"+totalscore+"</p>")
     
   }
   start();
