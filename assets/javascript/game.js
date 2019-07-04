@@ -32,6 +32,9 @@ $(document).ready(function () {
     gem2 = getRandomInteger(1, 12);
     gem3 = getRandomInteger(1, 12);
     gem4 = getRandomInteger(1, 12);
+    totalscore = 0;
+    $ ("#random-number").html("<p>"+randomNumber+"</p>")
+    
   }
   start();
   console.log (randomNumber);
@@ -39,6 +42,8 @@ $(document).ready(function () {
   console.log (gem2);
   console.log (gem3);
   console.log (gem4);
+
+
 
 
 
